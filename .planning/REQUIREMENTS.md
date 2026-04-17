@@ -131,20 +131,76 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CORE-01 through CORE-12 | Phase 1 | Pending |
-| AGENT-01 through AGENT-08 | Phase 1 | Pending |
-| INGEST-01 through INGEST-04 | Phase 2 | Pending |
-| OCR-01 through OCR-08 | Phase 3 | Pending |
-| REVIEW-01 through REVIEW-07 | Phase 4 | Pending |
-| EXPORT-01 through EXPORT-10 | Phase 5 | Pending |
-| RECIPE-01 through RECIPE-05 | Phase 6 | Pending |
+| CORE-01 | Phase 1 | Pending |
+| CORE-02 | Phase 1 | Pending |
+| CORE-03 | Phase 1 | Pending |
+| CORE-04 | Phase 1 | Pending |
+| CORE-05 | Phase 1 | Pending |
+| CORE-06 | Phase 1 | Pending |
+| CORE-07 | Phase 1 | Pending |
+| CORE-08 | Phase 7 | Pending |
+| CORE-09 | Phase 7 | Pending |
+| CORE-10 | Phase 7 | Pending |
+| CORE-11 | Phase 7 | Pending |
+| CORE-12 | Phase 7 | Pending |
+| AGENT-01 | Phase 1 | Pending |
+| AGENT-02 | Phase 1 | Pending |
+| AGENT-03 | Phase 1 | Pending |
+| AGENT-04 | Phase 1 | Pending |
+| AGENT-05 | Phase 1 | Pending |
+| AGENT-06 | Phase 1 | Pending |
+| AGENT-07 | Phase 7 | Pending |
+| AGENT-08 | Phase 7 | Pending |
+| INGEST-01 | Phase 2 | Pending |
+| INGEST-02 | Phase 2 | Pending |
+| INGEST-03 | Phase 2 | Pending |
+| INGEST-04 | Phase 2 | Pending |
+| OCR-01 | Phase 3 | Pending |
+| OCR-02 | Phase 3 | Pending |
+| OCR-03 | Phase 3 | Pending |
+| OCR-04 | Phase 3 | Pending |
+| OCR-05 | Phase 3 | Pending |
+| OCR-06 | Phase 3 | Pending |
+| OCR-07 | Phase 3 | Pending |
+| OCR-08 | Phase 3 | Pending |
+| REVIEW-01 | Phase 4 | Pending |
+| REVIEW-02 | Phase 4 | Pending |
+| REVIEW-03 | Phase 4 | Pending |
+| REVIEW-04 | Phase 4 | Pending |
+| REVIEW-05 | Phase 4 | Pending |
+| REVIEW-06 | Phase 4 | Pending |
+| REVIEW-07 | Phase 4 | Pending |
+| EXPORT-01 | Phase 5 | Pending |
+| EXPORT-02 | Phase 5 | Pending |
+| EXPORT-03 | Phase 5 | Pending |
+| EXPORT-04 | Phase 5 | Pending |
+| EXPORT-05 | Phase 5 | Pending |
+| EXPORT-06 | Phase 5 | Pending |
+| EXPORT-07 | Phase 5 | Pending |
+| EXPORT-08 | Phase 5 | Pending |
+| EXPORT-09 | Phase 5 | Pending |
+| EXPORT-10 | Phase 5 | Pending |
+| RECIPE-01 | Phase 6 | Pending |
+| RECIPE-02 | Phase 6 | Pending |
+| RECIPE-03 | Phase 6 | Pending |
+| RECIPE-04 | Phase 6 | Pending |
+| RECIPE-05 | Phase 6 | Pending |
 
 **Coverage:**
-- v1 requirements: 57 total
-- Mapped to phases: 57
+- v1 requirements: 54 total
+- Mapped to phases: 54
 - Unmapped: 0 ✓
+
+**Phase distribution:**
+- Phase 1 (Core Platform + Agentic Foundation): CORE-01–07, AGENT-01–06 (13 requirements)
+- Phase 2 (Invoice Ingestion + Document Store): INGEST-01–04 (4 requirements)
+- Phase 3 (OCR Pipeline + Extraction Engine): OCR-01–08 (8 requirements)
+- Phase 4 (Review UI — Three-Role Views): REVIEW-01–07 (7 requirements)
+- Phase 5 (Accounting Export): EXPORT-01–10 (10 requirements)
+- Phase 6 (Recipe & Food Costing Module): RECIPE-01–05 (5 requirements)
+- Phase 7 (Production Hardening + KB Self-Improvement Loop): CORE-08–12, AGENT-07–08 (7 requirements)
 
 ---
 
 *Requirements defined: 2026-04-17*
-*Last updated: 2026-04-17 after initial definition*
+*Last updated: 2026-04-17 — traceability updated to 7-phase roadmap; CORE-08–12 and AGENT-07–08 deferred to Phase 7 (Production Hardening); requirement count corrected to 54*
