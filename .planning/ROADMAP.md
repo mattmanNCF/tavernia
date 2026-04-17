@@ -32,7 +32,18 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. A user can register, log in with email + password, receive a JWT, and have their role (`chef`, `gm`, or `accountant`) enforce access to role-appropriate routes
   4. An agent call via `AgentProvider` loads the domain `context.md`, reads the relevant wiki KB section, and writes a structured outcome entry to `wiki/{domain}/` after completion — all without hardcoding any provider SDK
   5. A second user sharing a role receives a distinct `wiki/users/{username}.md` profile, and agents address that user's preferences separately from the first
-**Plans**: TBD
+**Plans**: 9 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — Test scaffold: pyproject.toml, conftest.py, all test stubs, mock provider
+- [ ] 01-02-PLAN.md — Docker skeleton: docker-compose.yml, Dockerfile, .env.example, requirements.txt
+- [ ] 01-03-PLAN.md — Core schema: 7 SQLAlchemy models, async session, Alembic initial migration
+- [ ] 01-04-PLAN.md — AgentProvider + wiki KB: ABC, loader, wiki helpers, context.md, wiki dirs, user profiles
+- [ ] 01-05-PLAN.md — Plugin system: pluggy hookspecs, plugin_manager, event_bus, hello_world plugin
+- [ ] 01-06-PLAN.md — Auth + RBAC backend: auth routes, deps.py, role-gated stubs, DB seeder
+- [ ] 01-07-PLAN.md — App wiring: complete main.py (lifespan + pluggy + all routers), celery tasks stub
+- [ ] 01-08-PLAN.md — Frontend scaffold: Vite+React+TS+shadcn, Zustand auth store, login, ProtectedRoute, 3 role shells
+- [ ] 01-09-PLAN.md — Integration checkpoint: full test suite + human verify all 5 success criteria
 
 ### Phase 2: Invoice Ingestion + Document Store
 **Goal**: An invoice — photographed on a phone or emailed as a PDF — lands in Tavernia's document store and triggers a processing event, with no manual file transfer required
@@ -113,7 +124,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Core Platform + Agentic Foundation | 0/TBD | Not started | - |
+| 1. Core Platform + Agentic Foundation | 0/9 | Not started | - |
 | 2. Invoice Ingestion + Document Store | 0/TBD | Not started | - |
 | 3. OCR Pipeline + Extraction Engine | 0/TBD | Not started | - |
 | 4. Review UI — Three-Role Views | 0/TBD | Not started | - |
